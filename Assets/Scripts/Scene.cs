@@ -15,6 +15,6 @@ public class Scene : MonoBehaviour {
 	}
 
 	public void OnClick(){
-		SceneManager.LoadScene ("maps", LoadSceneMode.Single);
+		SceneManager.LoadSceneAsync("maps", LoadSceneMode.Single);
 	}
 }
