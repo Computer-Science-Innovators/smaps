@@ -1,0 +1,14 @@
+# Unity3D generated meta files
+*.pidb.meta
+*.meta
+*.META
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+*.apk
+
+# asp because github identifies repo as asp instead of csharp
+*.aspx
+
