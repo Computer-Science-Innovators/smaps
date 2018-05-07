@@ -485,7 +485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.107055664, y: -96}
+  m_AnchoredPosition: {x: 0.107055664, y: -115}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &144608817
@@ -763,7 +763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 25, y: -700}
+  m_AnchoredPosition: {x: 25, y: -670}
   m_SizeDelta: {x: 160, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430413727
@@ -2245,7 +2245,7 @@ RectTransform:
   m_GameObject: {fileID: 1315598261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8875, y: 0.8875, z: 0.8875}
+  m_LocalScale: {x: 0.61125, y: 0.61125, z: 0.61125}
   m_Children:
   - {fileID: 144608816}
   - {fileID: 1851496372}
@@ -2958,7 +2958,8 @@ MonoBehaviour:
   m_Text: 'Created by the Computer Science Innovators Club Officers:
 
 
-    Jimmy Shi, Rohit Jayaram, Rahul Shah, Elizabeth Johnson, Benjamin Wu, Peter Wu
+    Jimmy Shi, Rohit Jayaram, Rahul Shah, Timothy Miles, Elizabeth Johnson, Benjamin
+    Wu, Peter Wu
 
 '
 --- !u!222 &1955892375

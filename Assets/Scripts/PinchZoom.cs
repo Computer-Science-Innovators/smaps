@@ -6,7 +6,7 @@ using UnityEngine;
 public class PinchZoom : MonoBehaviour
 {
     private float scale_factor = 0.04f;
-    private float MAXSCALE = 2.0f, MIN_SCALE = 0.2f; // zoom-in and zoom-out limits
+    private float MAXSCALE = 6.0f, MIN_SCALE = 0.6f; // zoom-in and zoom-out limits
     private bool isMousePressed;
     private Vector2 prevDist = new Vector2(0, 0);
     private Vector2 curDist = new Vector2(0, 0);
