@@ -2,6 +2,7 @@ Android
 PlayerPath?
 C:/Users/rahul/Desktop/southpiratemaps.apk
 SceneListBegin?
+Assets/Scenes/debug.unity
 Assets/Scenes/home.unity
 Assets/Scenes/maps.unity
 Assets/Scenes/schedule.unity
@@ -260,7 +261,7 @@ a924c90a95cf65003f662aa5e30abb6b Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 01e6f145049f3a676df6dc247eabf176 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-c4567a9be9f94895c7ac26a4c3778caf Assembly-CSharp.dll:.Searcher
+69abf2dd99abf8dc91c1fedcae90ffcf Assembly-CSharp.dll:.Searcher
 292bc1beec91bdb9a546bb97f280b74a Assembly-CSharp.dll:.OpenRoom
 bd62cc3de619f25fd86c7f78e6d15e19 Assembly-CSharp.dll:.OpenPath
 bc79872c81f3cda9be1ec427f70f92aa Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
@@ -296,3 +297,5 @@ a924c90a95cf65003f662aa5e30abb6b Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 01e6f145049f3a676df6dc247eabf176 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LocationService
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SaveSchedule

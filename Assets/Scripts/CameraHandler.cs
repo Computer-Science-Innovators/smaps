@@ -118,7 +118,7 @@ public class CameraHandler : MonoBehaviour
 		Vector3 pos = transform.position;
 		pos.x = Mathf.Clamp(transform.position.x, BoundsX[0], BoundsX[1]);
 		pos.y = Mathf.Clamp(transform.position.y, BoundsY[0], BoundsY[1]);
-		//pos.z = Mathf.Clamp(transform.position.z, BoundsZ[0], BoundsZ[1]);
+		pos.z = Mathf.Clamp(transform.position.z, BoundsZ[0], BoundsZ[1]);
 		transform.position = pos;
 
 		// Cache the position
