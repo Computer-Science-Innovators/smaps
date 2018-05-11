@@ -1136,8 +1136,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Created by the Computer Science Innovators Club Officers:\n\nJimmy Shi,
-    Rohit Jayaram, Rahul Shah, Aditya Patil, Pasha Hakim\n\nAlong with: \nAllen Zheng,
-    Timothy Miles, Elizabeth Johnson, Benjamin Wu, Peter Wu\n"
+    Rohit Jayaram, Rahul Shah, Aditya Patil, Pasha Hakim\n\nAlong with: \nDeepansha
+    Singh, Samvit Agarwal, Allen Zheng, Timothy Miles, Elizabeth Johnson, Benjamin
+    Wu, Peter Wu\n"
 --- !u!222 &1955892375
 CanvasRenderer:
   m_ObjectHideFlags: 0
