@@ -12,3 +12,5 @@ sysinfo.txt
 # asp because github identifies repo as asp instead of csharp
 *.aspx
 *.asp
+
+*.userprefs
