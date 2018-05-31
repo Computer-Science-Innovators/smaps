@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class Searcher : MonoBehaviour {
 
 	public GameObject sObject;
 	public string location;
+	public Text locationText;
 
 	public IEnumerator Start()
 	{
+		LocationService ls = new LocationService ();
+		ls.Start ();
 		// First, check if user has location service enabled
 		if (!Input.location.isEnabledByUser)
 			yield break;
@@ -40,7 +44,9 @@ public class Searcher : MonoBehaviour {
 		else
 		{
 			// Access granted and location value could be retrieved
-			print("Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp);
+			string ltxt = "Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp;
+			print(ltxt);
+			locationText.text = ltxt;
 		}
 
 		// Stop service if there is no need to query location updates continuously
@@ -55,6 +61,11 @@ public class Searcher : MonoBehaviour {
 	public void OnClick()
 	{
 		location = "Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp;
+		locationText.text = location;
+	}
 
+	public void OnGUI()
+	{
+		GUI.Label(new Rect(10,10,100,20), location);
 	}
 }
