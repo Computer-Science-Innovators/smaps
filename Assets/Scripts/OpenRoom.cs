@@ -5,12 +5,15 @@ using UnityEngine.UI;
 public class OpenRoom : MonoBehaviour {
 
 	public GameObject roomDiv;
-	void Start () {
+
+	void Start () 
+	{
 
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 
 	}
 

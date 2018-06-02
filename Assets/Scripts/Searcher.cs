@@ -11,7 +11,7 @@ public class Searcher : MonoBehaviour {
 
 	public IEnumerator Start()
 	{
-		LocationService ls = new LocationService ();
+		LocationService ls = new GameObject("LocationService").AddComponent<LocationService> ();
 		ls.Start ();
 		// First, check if user has location service enabled
 		if (!Input.location.isEnabledByUser)
