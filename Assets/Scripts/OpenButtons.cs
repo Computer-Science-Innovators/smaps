@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class OpenButtons : MonoBehaviour {
 
-	public GameObject roomDiv;
-	public GameObject pathDiv;
+	public GameObject menuDiv;
+	public GameObject resetDiv;
 	public GameObject scheduleDiv;
 
 	// Use this for initialization
@@ -22,17 +22,17 @@ public class OpenButtons : MonoBehaviour {
 
 	public void OnClick()
 	{
-		// Hide/Reveal roomDiv
-		if(roomDiv.GetComponent<Animator> ().GetBool("open")!=true)
-			roomDiv.GetComponent<Animator> ().SetBool ("open", true);
+		// Hide/Reveal menuDiv
+		if(menuDiv.GetComponent<Animator> ().GetBool("open")!=true)
+			menuDiv.GetComponent<Animator> ().SetBool ("open", true);
 		else
-			roomDiv.GetComponent<Animator> ().SetBool ("open", false);
+			menuDiv.GetComponent<Animator> ().SetBool ("open", false);
 
-		// Hide/Reveal pathDiv
-		if(pathDiv.GetComponent<Animator> ().GetBool("open")!=true)
-			pathDiv.GetComponent<Animator> ().SetBool ("open", true);
+		// Hide/Reveal resetDiv
+		if(resetDiv.GetComponent<Animator> ().GetBool("open")!=true)
+			resetDiv.GetComponent<Animator> ().SetBool ("open", true);
 		else
-			pathDiv.GetComponent<Animator> ().SetBool ("open", false);
+			resetDiv.GetComponent<Animator> ().SetBool ("open", false);
 
 		// Hide/Reveal scheduleDiv
 		if(scheduleDiv.GetComponent<Animator> ().GetBool("open")!=true)
