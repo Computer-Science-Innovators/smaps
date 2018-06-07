@@ -190,7 +190,7 @@ a924c90a95cf65003f662aa5e30abb6b Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 00ee24b179a4a80deff28e754f0fb4ba Assembly-CSharp.dll:.UI
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PinchZoom
+fb32d969613de9c619e45d4e7146262d Assembly-CSharp.dll:.PinchZoom
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LinkClick
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -301,4 +301,4 @@ a924c90a95cf65003f662aa5e30abb6b Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 01e6f145049f3a676df6dc247eabf176 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-bcbe5cdaa323e5da95d721ec200810cc Assembly-CSharp.dll:.OpenButtons
+45a3f7905fc7f21d558a22e8928bdfe5 Assembly-CSharp.dll:.OpenButtons
