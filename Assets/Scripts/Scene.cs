@@ -21,6 +21,13 @@ public class Scene : MonoBehaviour {
 	public void OnClick(){
 		if ((email.text).EndsWith("wwprsd.org") && (password.text).StartsWith("WWP")) {
 			print("Right thing");
+
+            if((password.text).StartsWith("WWP9")){
+                DataKeeper.triggerPassword = true;
+            }else{
+                DataKeeper.triggerPassword = false;
+            }
+
 			SceneManager.LoadSceneAsync("maps", LoadSceneMode.Single);
 			return;
 		}

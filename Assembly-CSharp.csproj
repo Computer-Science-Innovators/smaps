@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\CameraHandler.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Control.cs" />
+    <Compile Include="Assets\Scripts\DataKeeper.cs" />
     <Compile Include="Assets\Scripts\Drag.cs" />
     <Compile Include="Assets\Scripts\LinkClick.cs" />
     <Compile Include="Assets\Scripts\LocationService.cs" />
