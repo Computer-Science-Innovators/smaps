@@ -3,69 +3,79 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Searcher : MonoBehaviour {
+public class Searcher : MonoBehaviour
+{
 
-	public GameObject sObject;
-	public string location;
-	public Text locationText;
+    public GameObject sObject;
+    public string location = "defaults";
+    public Text locationText;
 
-	public IEnumerator Start()
-	{
-		LocationService ls = new GameObject("LocationService").AddComponent<LocationService> ();
-		ls.Start ();
-		// First, check if user has location service enabled
-		if (!Input.location.isEnabledByUser)
-			yield break;
+    public IEnumerator Start()
+    {
 
-		// Start service before querying location
-		Input.location.Start();
+        print("pre start");
 
-		// Wait until service initializes
-		int maxWait = 20;
-		while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
-		{
-			yield return new WaitForSeconds(1);
-			maxWait--;
-		}
+        LocationService ls = new GameObject("LocationService").AddComponent<LocationService>();
+        ls.Start();
+        // First, check if user has location service enabled
+        if (!Input.location.isEnabledByUser)
+        {
+            print("Location service not enabled");
+            yield break;
 
-		// Service didn't initialize in 20 seconds
-		if (maxWait < 1)
-		{
-			print("Timed out");
-			yield break;
-		}
 
-		// Connection has failed
-		if (Input.location.status == LocationServiceStatus.Failed)
-		{
-			print("Unable to determine device location");
-			yield break;
-		}
-		else
-		{
-			// Access granted and location value could be retrieved
-			string ltxt = "Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp;
-			print(ltxt);
-			locationText.text = ltxt;
-		}
+            // Start service before querying location
+            Input.location.Start(10, 500);
+            print("ls started");
+            // Wait until service initializess
+            int maxWait = 20;
+            while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
+            {
+                yield return new WaitForSeconds(1);
+                maxWait--;
+                print(maxWait);
+            }
 
-		// Stop service if there is no need to query location updates continuously
-		Input.location.Stop();
-	}
+            // Service didn't initialize in 20 seconds
+            if (maxWait < 1)
+            {
+                print("Timed out");
+                yield break;
+            }
 
-	// Update is called once per frame
-	void Update () {
+            print("reached end of wait");
 
-	}
+            // Connection has failed
+            if (Input.location.status == LocationServiceStatus.Failed)
+            {
+                print("Unable to determine device location");
+                yield break;
+            }
+            else
+            {
+                // Access granted and location value could be retrieved
+                string ltxt = "Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp;
+                print(ltxt);
+                print("got to check1");
+                print(Input.location.status);
+                locationText.text = ltxt;
+            }
+        }
 
-	public void OnClick()
-	{
-		location = "Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp;
-		locationText.text = location;
-	}
+        // Update is called once per frame
+        void Update()
+        {
 
-	public void OnGUI()
-	{
-		GUI.Label(new Rect(10,10,100,20), location);
-	}
-}
+        }
+
+        public void OnClick()
+        {
+            location = "Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp;
+            locationText.text = location;
+        }
+
+        public void OnGUI()
+        {
+            GUI.Label(new Rect(10, 10, 100, 20), location);
+        }
+    }
