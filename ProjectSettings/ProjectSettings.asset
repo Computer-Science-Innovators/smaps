@@ -8,7 +8,7 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 0
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -153,6 +153,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.CSI.SouthPirateMaps
+    iOS: com.CSI.PirateMaps
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -326,6 +327,8 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 1
       m_SubKind: 
+<<<<<<< HEAD
+=======
     - m_Textures: []
       m_Width: 192
       m_Height: 192
@@ -356,6 +359,7 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+>>>>>>> origin/master
   - m_BuildTarget: iPhone
     m_Icons:
     - m_Textures: []
