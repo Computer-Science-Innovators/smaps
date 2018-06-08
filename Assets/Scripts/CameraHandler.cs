@@ -5,7 +5,7 @@ public class CameraHandler : MonoBehaviour
 {
 
 	private static readonly float PanSpeed = 15f;
-	private static readonly float ZoomSpeedTouch = 0.005f;
+	private static readonly float ZoomSpeedTouch = 0.5f;
 	private static readonly float ZoomSpeedMouse = 0.5f;
 
 	private static readonly float[] BoundsX = new float[] { -8f, 12f };
@@ -69,7 +69,7 @@ public class CameraHandler : MonoBehaviour
 			}
 			else
 			{
-				// Zoom based on the distance between the new positions compared to the 
+				// Zoom based on the distance between the new positions compared to the
 				// distance between the previous positions.
 				float newDistance = Vector2.Distance(newPositions[0], newPositions[1]);
 				float oldDistance = Vector2.Distance(lastZoomPositions[0], lastZoomPositions[1]);
