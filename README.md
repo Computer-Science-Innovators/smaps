@@ -21,4 +21,4 @@ This app works well for our school, and we plan on implementing it with other la
 We learned about how to use the game design engine Unity along with how to code in C#, as most of us are used to Java, the programming language taught in our school.
 
 ## What Are Our Future Plans?
-We plan on making this app easier to use and being able to work from an inputted map, making traveling much easier for users.
+We plan on making this app easier to use and being able to work from an inputted map, making traveling much easier for users. If the app is a success then we could make similar apps for other schools or universities to help even more students.
