@@ -4,9 +4,9 @@ using System.Collections;
 public class CameraHandler : MonoBehaviour
 {
 
-	private static readonly float PanSpeed = 15f;
-	private static readonly float ZoomSpeedTouch = 0.5f;
-	private static readonly float ZoomSpeedMouse = 0.5f;
+	private static readonly float PanSpeed = 20f;
+	private static readonly float ZoomSpeedTouch = 0.1f;
+	private static readonly float ZoomSpeedMouse = 0.5f; // Not even built for desktop anyway but ok
 
 	private static readonly float[] BoundsX = new float[] { -8f, 12f };
 	private static readonly float[] BoundsY = new float[] { -10f, 10f };
